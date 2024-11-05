@@ -22,16 +22,6 @@ export default function DevToolsWebView() {
       }
     })();
 
-    // Habilitar inspección de elementos
-    document.addEventListener('click', function(e) {
-      if (window.inspectMode) {
-        e.preventDefault();
-        const element = e.target;
-        console.log('Element:', element);
-        console.log('HTML:', element.outerHTML);
-        console.log('CSS:', window.getComputedStyle(element));
-      }
-    });
   `;
 
   const handleUrlSubmit = () => {
